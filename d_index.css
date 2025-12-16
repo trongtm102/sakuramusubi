@@ -1,0 +1,1121 @@
+/* ===== Process session ===== */
+
+.process {
+  background: #f6f6f1;
+  padding: 140px 0 125px;
+  position: relative;
+}
+
+.process__inner {
+  margin: 0 auto;
+  padding-top: 60px;
+  /* max-width: 1440px; */
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+.process__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding-left: 190px;
+  padding-right: 180px;
+  margin-bottom: 40px;
+}
+
+.process__head-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: nowrap;
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+.process__title {
+  margin: 0;
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #030023;
+  white-space: nowrap;
+}
+
+.process__sub {
+  margin: 0;
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #030023;
+  opacity: 0.85;
+  white-space: nowrap;
+}
+
+.process__nav {
+  display: flex;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.process__btn {
+  width: 64px;
+  height: 64px;
+  border-radius: 999px;
+  border: 1px solid rgba(3, 0, 35, 0.75);
+  background: transparent;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  color: #030023;
+  font-size: 20px;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.process__btn:hover {
+  background: rgba(3, 0, 35, 0.05);
+  transform: scale(1.05);
+}
+
+.process__btn:active {
+  transform: scale(0.95);
+}
+
+.process__body {
+  border-top: 1px solid #030023;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-left: 190px;
+  overflow: hidden;
+}
+
+.process__slider {
+  padding-left: 190px;
+  padding-right: 190px;
+}
+
+.process__slider .swiper-slide {
+  height: auto;
+}
+
+.process-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.process-card__img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #d9d9d9;
+  margin-bottom: 14px;
+  width: 280px;
+  height: 224px;
+}
+
+.process-card__title {
+  margin: 0 0 10px;
+  font-family: "Shippori Mincho B1", serif;
+  font-family: Shippori Mincho B1;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: #030023;
+}
+
+.process-card__text {
+  margin: 0;
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 2px;
+}
+
+.process-card__tags {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.process-tag {
+  border: 1px solid #030023;
+  padding: 4px 8px;
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 160%;
+  letter-spacing: 2px;
+
+  color: #030023;
+}
+
+.process-tag--dark {
+  background: #030023;
+  color: #fbf6ef;
+  border-color: #030023;
+}
+
+.process__headline {
+  margin: 28px 0 14px;
+  text-align: center;
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 160%;
+  padding-left: 190px;
+  padding-right: 190px;
+}
+
+.process__features {
+  width: 70%;
+  margin: 35px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid #030023;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.process__feature {
+  border-right: 1px solid #030023;
+}
+
+.process__feature:last-child {
+  border-right: none;
+}
+
+.process__feature b {
+  padding: 12px 0;
+  text-align: center;
+  display: block;
+  margin-bottom: 8px;
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 2px;
+  text-align: center;
+
+  color: #030023;
+  border-bottom: 1px solid #030023;
+}
+
+.process__feature p {
+  padding: 15px 10px;
+  text-align: center;
+  margin: 0;
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 2px;
+  color: #030023;
+}
+
+.process__bg1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.process__bg2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.process__bg3 {
+  position: absolute;
+  top: 240px;
+  left: 0;
+  z-index: 0;
+}
+
+.process__bg4 {
+  position: absolute;
+  top: 100px;
+  right: 68px;
+  z-index: 0;
+}
+/* ==== End process session ==== */
+
+/* ===== =============================== ===== */
+
+/* ===== Inspect ===== */
+
+.inspect {
+  background: linear-gradient(
+    to bottom,
+    #f3f0e5 0%,
+    #f3f0e5 80%,
+    #f6f6f1 80%,
+    #f6f6f1 100%
+  );
+  padding: 88px 20px 140px;
+  position: relative;
+}
+
+/* dotted subtle background */
+.inspect::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(15, 20, 48, 0.08) 1px,
+    transparent 1.6px
+  );
+  background-size: 22px 22px;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+/* ---- Please take a look (rotating) ---- */
+.inspect__look {
+  position: absolute;
+  top: 9%;
+  right: 8%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  z-index: 2;
+}
+
+.inspect__lookCircle {
+  width: 190px;
+  height: 190px;
+  animation: inspectSpin 9s linear infinite;
+}
+.inspect__lookCircle svg {
+  width: 100%;
+  height: 100%;
+}
+.inspect__lookCircle text {
+  font-family: "Shippori Mincho B1", serif;
+  font-size: 16px;
+  letter-spacing: 4px;
+  fill: #030023;
+}
+
+@keyframes inspectSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.inspect__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.inspect__title {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: 4px;
+  color: #030023;
+}
+
+.inspect__desc {
+  margin-top: 60px;
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 200%;
+  letter-spacing: 5%;
+  text-align: center;
+}
+
+.inspect__cols {
+  position: relative;
+  margin-top: 46px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  z-index: 1;
+}
+
+.inspect__col {
+  text-align: center;
+}
+
+.inspect__bar {
+  background: #030023;
+  color: #ffffff;
+  padding: 6px 16px;
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 2px;
+}
+
+.inspect__bar.left {
+  margin-left: 25%;
+  margin-right: 10%;
+}
+
+.inspect__bar.right {
+  margin-left: 10%;
+  margin-right: 25%;
+}
+
+.inspect__note {
+  height: 70px;
+  margin: 20px 0 24px;
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.inspect__cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 26px;
+  margin-top: 18px;
+}
+
+.inspect__card {
+  width: 328px;
+  position: relative;
+}
+
+.inspect__icon-page {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.inspect__card-image-wrapper {
+  margin-top: 43px;
+}
+
+.inspect__image-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.inspect__heat-left {
+  position: absolute;
+  bottom: 0;
+  left: 61px;
+}
+
+/* ==== End case inspect ==== */
+
+/* ===== =============================== ===== */
+
+/* ===== Case Section ===== */
+
+.case {
+}
+
+.case__inner {
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.case__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding-left: 190px;
+  padding-right: 100px;
+  margin-bottom: 40px;
+}
+
+.case__head-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.case__title {
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #030023;
+  margin: 0;
+}
+
+.case__sub {
+  margin: 0;
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #030023;
+  opacity: 0.85;
+}
+
+.case__nav {
+  display: flex;
+  gap: 20px;
+}
+
+.case__btn {
+  width: 64px;
+  height: 64px;
+  border-radius: 999px;
+  border: 1px solid rgba(3, 0, 35, 0.75);
+  background: transparent;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  color: #030023;
+}
+
+.case__btn span {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.case__body {
+  border-top: 1px solid #030023;
+  border-bottom: 1px solid #030023;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.case__slider {
+  margin-left: 190px !important;
+}
+
+/* Card */
+.case-card {
+  display: grid !important;
+  grid-template-columns: 340px 1fr;
+  gap: 26px;
+  align-items: center;
+  padding: 18px 0;
+}
+
+.case-card__media {
+  width: 328px;
+  height: 208px;
+  aspect-ratio: 4 / 3;
+  background: #d9d9d9;
+  border-radius: 2px;
+}
+
+.case-card__media img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.case-card__title {
+  margin: 0 0 10px;
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #030023;
+}
+
+.case-card__text {
+  margin: 0;
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #030023;
+  opacity: 0.9;
+}
+
+/* ==== End case section ==== */
+
+/* ===== =============================== ===== */
+
+/* ===== News Section ===== */
+
+.news {
+  position: relative;
+  background: #f6f6f1;
+  padding: 140px 160px;
+}
+
+.news__inner {
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.news__side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.news__title {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: 4px;
+  color: #030023;
+}
+
+.news__all {
+  text-decoration: none;
+  color: #030023;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.news__all-icon {
+  width: 64px;
+  height: 64px;
+  border: 1px solid #030023;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+}
+
+.news__all-icon svg {
+  margin-left: 4px;
+}
+
+.news__all-text {
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.news__content {
+  margin-top: 20px;
+}
+
+.news__item {
+  border-bottom: 1px solid rgba(3, 0, 35, 0.35);
+}
+
+.news__summary {
+  list-style: none;
+  cursor: pointer;
+
+  display: grid;
+  grid-template-columns: 110px 1fr 24px;
+  align-items: center;
+  gap: 20px;
+
+  padding: 16px 0;
+}
+
+.news__summary::-webkit-details-marker {
+  display: none;
+}
+
+.news__date {
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #030023;
+  opacity: 0.9;
+}
+
+.news__headline {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #030023;
+}
+
+.news__arrow {
+  width: 16px;
+  height: 16px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+  line-height: 1;
+
+  color: #030023;
+  opacity: 0.85;
+
+  transform-origin: center;
+  transition: transform 0.25s ease;
+}
+
+.news__item.is-open .news__arrow {
+  transform: rotate(90deg);
+}
+
+.news__detail {
+  overflow: hidden;
+  height: 0;
+  padding-left: 130px;
+}
+
+.news__detail-inner {
+  padding: 0 0 18px 0;
+}
+
+.news__detail p {
+  margin: 0 0 8px;
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #030023;
+  opacity: 0.95;
+}
+
+.news__heat {
+  position: absolute;
+  top: 50px;
+  right: 60px;
+}
+
+/* ==== End news section ==== */
+
+/* ===== =============================== ===== */
+
+/* ==== Profile Section ==== */
+
+.profile-overview {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(246, 246, 241, 0.3) 0.48%,
+    #f7e4da 35.32%,
+    rgba(253, 248, 245, 0.2) 100%
+  );
+
+  padding: 165px 20px;
+}
+
+.profile-overview__inner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: anchor-center;
+}
+
+.profile-overview__title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.profile-overview__icon {
+  font-size: 20px;
+  color: #db5331;
+}
+
+.profile-overview__text {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: 4px;
+  color: #030023;
+}
+
+.profile-overview__list {
+  margin-top: 80px;
+  margin-left: 17px;
+  display: inline-block;
+  text-align: left;
+  font-family: "Higure Gothic", sans-serif;
+  font-size: 14px;
+  color: #030023;
+}
+
+.profile-overview__row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 25px;
+}
+
+.profile-overview__row dt {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 1px;
+}
+
+.profile-overview__row dd {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 1px;
+}
+
+.profile-overview__image-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.profile-overview__image-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.profile-overview__image-design {
+  position: absolute;
+  bottom: 70px;
+  left: 120px;
+}
+
+.profile-overview__heat-left {
+  position: absolute;
+  left: 70px;
+  top: 40px;
+}
+
+.profile-overview__heat-right {
+  position: absolute;
+  right: 80px;
+  bottom: 50%;
+}
+/* ==== End profile section ==== */
+
+/* ===== =============================== ===== */
+
+/* ==== Cta Section ==== */
+
+.cta {
+  position: relative;
+  padding-top: 200px;
+}
+
+.cta__container {
+  margin: 0 auto;
+  position: relative;
+}
+
+.cta__header {
+  margin-bottom: 14px;
+}
+
+.cta__title {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-left: 160px;
+}
+
+.cta__title-en {
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.2;
+  letter-spacing: 2.4px;
+  color: #030023;
+}
+
+.cta__title-ja {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.7px;
+  color: #030023;
+}
+
+.cta__cards {
+  width: 90%;
+  background-color: #ffffff;
+  border-radius: 0 32px 0 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  padding: 50px 260px 80px 160px;
+}
+
+.cta__card {
+  display: flex;
+  justify-content: space-between;
+  gap: 230px;
+  flex: 1;
+  align-items: flex-end;
+}
+
+.cta__card-content {
+  flex: 1;
+}
+
+.cta__card-title {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 51.2px;
+  letter-spacing: 1.6px;
+  color: #030023;
+  margin-bottom: 24px;
+}
+
+.cta__card-divider {
+  width: 100%;
+  height: 6px;
+  background-color: #030023;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.cta__card-divider::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.5" numOctaves="1" /></filter><rect width="100%" height="100%" filter="url(%23noise)" opacity="0.5"/></svg>');
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.cta__card-text p {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28.8px;
+  letter-spacing: 0.8px;
+  color: #030023;
+  margin-bottom: 8px;
+}
+
+.cta__card-note {
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.cta__card-icon {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+  position: relative;
+}
+
+.cta__card-icon::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="2.5" numOctaves="1" /></filter><rect width="100%" height="100%" filter="url(%23noise)" opacity="0.3"/></svg>');
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.cta__card-icon--orange {
+  background-color: #db5331;
+}
+
+.cta__card-icon--dark {
+  background-color: #1c1c1c;
+}
+
+.cta__card-icon svg {
+  position: relative;
+  z-index: 1;
+}
+
+.cta__vertical-text {
+  position: absolute;
+  right: 37px;
+  top: 19%;
+  transform: translateY(-50%);
+  z-index: 10;
+
+  display: flex;
+  gap: 16px;
+}
+
+.cta__vertical-line {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 400;
+  font-size: 112px;
+  line-height: 1;
+  color: #030023;
+
+  white-space: nowrap;
+}
+
+.cta__vertical-fade {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  width: 362px;
+}
+
+/* ==== End cta Section ==== */
+
+/* ===== =============================== ===== */
+
+/* ====  Footer  ==== */
+
+.footer {
+  background-color: #1c1c1c;
+  background-image: linear-gradient(to bottom, #1c1c1c 0%, #1c1c1c 100%);
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer__main {
+  display: flex;
+  position: relative;
+}
+
+.footer__left,
+.footer__right {
+  width: 50%;
+  height: 800px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__left {
+  background-color: #2c2c2c;
+}
+
+.footer__left .footer__company .footer__company-name {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 200%;
+  letter-spacing: 1px;
+}
+
+.footer__left .footer__company .footer__company-info {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 200%;
+  letter-spacing: 1px;
+  margin-top: 30px;
+}
+
+.footer__left .footer__company .footer__company-info .footer__company-tel {
+  margin-top: 10px;
+}
+
+.footer__right {
+  background-color: #1c1c1c;
+  padding-left: 60px;
+}
+
+.footer__right .footer__links {
+  display: flex;
+  gap: 70px;
+}
+
+.footer__right .footer__links .footer__links-col {
+  display: flex;
+  flex-direction: column;
+  width: 253px;
+}
+
+.footer__right .footer__links .footer__links-col .footer__link {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+.footer__divider {
+  width: 90%;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.footer__bottom {
+  margin-top: 40px;
+  width: 72%;
+  display: flex;
+  justify-content: space-between;
+
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 1px;
+}
+
+.footer__watermark {
+  position: absolute;
+  bottom: -31px;
+  left: -2px;
+
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 900;
+  font-size: 188px;
+  line-height: 100%;
+  letter-spacing: -3px;
+  color: #ffffff05;
+}
+
+.footer__heat-left {
+  position: absolute;
+  left: 47px;
+  top: 47px;
+  width: 50px;
+  height: auto;
+}
+
+.footer__heat-right {
+  position: absolute;
+  right: 11px;
+  bottom: 17px;
+  width: 337.99993896484375px;
+  height: auto;
+}
+
+/* ====  End Footer  ==== */
