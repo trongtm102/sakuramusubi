@@ -1,0 +1,512 @@
+@media (max-width: 768px) {
+  .only-pc {
+    display: none !important;
+  }
+}
+@media (min-width: 769px) {
+  .only-sp {
+    display: none !important;
+  }
+}
+main {
+  margin-top: 100px;
+}
+
+.breadcrumb-main {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+.breadcrumb-main .breadcrumb-main__custom {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.breadcrumb-main .breadcrumb-main__custom .breadcrumb-main__left .breadcrumb-main__flex {
+  padding-left: 160px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+@media (max-width: 1282px) {
+  .breadcrumb-main .breadcrumb-main__custom .breadcrumb-main__left .breadcrumb-main__flex {
+    padding-left: 60px;
+  }
+}
+.breadcrumb-main .breadcrumb-main__custom .breadcrumb-main__left .breadcrumb-main__flex a,
+.breadcrumb-main .breadcrumb-main__custom .breadcrumb-main__left .breadcrumb-main__flex span {
+  font-family: "Higure Gothic";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.5px;
+  color: rgba(28, 28, 28, 0.5019607843);
+  text-decoration: none;
+}
+.breadcrumb-main .breadcrumb-main__custom .breadcrumb-main__left .breadcrumb-main__flex .arrow {
+  font-family: "Higure Gothic";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.5px;
+  color: #1C1C1C;
+}
+.breadcrumb-main .breadcrumb-main__custom .breadcrumb-main__left .image {
+  margin-top: 39px;
+}
+.breadcrumb-main .breadcrumb-main__custom .breadcrumb-main__left .main-title {
+  padding-left: 160px;
+}
+@media (max-width: 1282px) {
+  .breadcrumb-main .breadcrumb-main__custom .breadcrumb-main__left .main-title {
+    padding-left: 60px;
+  }
+}
+.breadcrumb-main .breadcrumb-main__custom .breadcrumb-main__left .page-title__en {
+  font-family: "Shippori Mincho B1";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 5%;
+  color: #030023;
+  margin-bottom: 32px;
+}
+.breadcrumb-main .breadcrumb-main__custom .breadcrumb-main__left .page-title__title {
+  font-family: "Shippori Mincho B1";
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 5%;
+  color: #030023;
+}
+.breadcrumb-main .breadcrumb-main__custom .breadcrumb-main__right .image {
+  max-width: 738px;
+  width: 100%;
+}
+.breadcrumb-main .breadcrumb-main__custom .breadcrumb-main__right .image svg {
+  width: 100%;
+}
+.breadcrumb-main .line {
+  margin: 0 auto;
+  margin-top: 80px;
+  max-width: 1120px;
+  width: 100%;
+  height: 1px;
+  background-color: #030023;
+}
+@media (max-width: 1282px) {
+  .breadcrumb-main .line {
+    max-width: 90%;
+  }
+}
+
+.main-contact .desc {
+  font-family: "Higure Gothic";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 5%;
+  text-align: center;
+  color: #030023;
+  margin-top: 64px;
+}
+
+.form-contact-custom {
+  margin: 0 auto;
+  margin-top: 64px;
+  max-width: 940px;
+  width: 100%;
+  padding: 0 20px;
+  padding-bottom: 160px;
+}
+.form-contact-custom .radio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+.form-contact-custom .radio-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  max-width: 442px;
+  width: -webkit-fill-availables;
+  border: 1px solid rgba(3, 0, 35, 0.3019607843);
+  padding: 24px;
+  padding-right: 0;
+}
+.form-contact-custom .radio-item input[type=radio] {
+  display: none;
+}
+.form-contact-custom .custom-radio {
+  width: 12px;
+  height: 12px;
+  border: 1px solid rgba(3, 0, 35, 0.3019607843);
+  border-radius: 50%;
+  background: transparent;
+  opacity: 1;
+  position: relative;
+}
+.form-contact-custom .radio-item input[type=radio]:checked + .custom-radio {
+  background: #DB5331;
+  border: 1px solid rgba(3, 0, 35, 0.3019607843);
+}
+.form-contact-custom .radio-text {
+  font-size: 14px;
+  color: #030023;
+}
+.form-contact-custom .form-group {
+  margin-bottom: 56px;
+}
+.form-contact-custom .form-group label {
+  font-family: "Shippori Mincho B1";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 5%;
+  color: #030023;
+  display: flex;
+  align-items: center;
+}
+.form-contact-custom .form-group .requid {
+  font-family: "Shippori Mincho B1";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 160%;
+  letter-spacing: 5%;
+  color: #DB5331;
+  margin-left: 16px;
+}
+.form-contact-custom .form-group input[type=text] {
+  margin-top: 16px;
+  display: block;
+  width: -webkit-fill-available;
+  border: 1px solid rgba(3, 0, 35, 0.3019607843);
+  padding: 16px 24px;
+  font-family: "Shippori Mincho B1";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 160%;
+  letter-spacing: 5%;
+  color: #030023;
+  background: transparent;
+  outline: none;
+}
+.form-contact-custom .form-group textarea {
+  margin-top: 16px;
+  background: transparent;
+  outline: none;
+  display: block;
+  width: -webkit-fill-available;
+  border: 1px solid rgba(3, 0, 35, 0.3019607843);
+  padding: 16px 24px;
+  font-family: "Shippori Mincho B1";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 160%;
+  letter-spacing: 5%;
+  color: #030023;
+  min-height: 192px;
+}
+.form-contact-custom .form-group input::-moz-placeholder, .form-contact-custom .form-group textarea::-moz-placeholder {
+  color: rgba(3, 0, 35, 0.3019607843);
+  opacity: 1;
+}
+.form-contact-custom .form-group input::placeholder,
+.form-contact-custom .form-group textarea::placeholder {
+  color: rgba(3, 0, 35, 0.3019607843);
+  opacity: 1;
+}
+.form-contact-custom .form-group input::-webkit-input-placeholder,
+.form-contact-custom .form-group textarea::-webkit-input-placeholder {
+  color: rgba(3, 0, 35, 0.3019607843);
+}
+.form-contact-custom .form-group input::-moz-placeholder,
+.form-contact-custom .form-group textarea::-moz-placeholder {
+  color: rgba(3, 0, 35, 0.3019607843);
+}
+.form-contact-custom .form-group input:-ms-input-placeholder,
+.form-contact-custom .form-group textarea:-ms-input-placeholder {
+  color: rgba(3, 0, 35, 0.3019607843);
+}
+.form-contact-custom .policy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.form-contact-custom .policy label {
+  margin: 0;
+}
+.form-contact-custom .policy a {
+  font-family: "Shippori Mincho B1";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 5%;
+  color: #030023;
+}
+.form-contact-custom .btn-submit {
+  width: 331px;
+  height: 74px;
+  margin: 0 auto;
+  margin-top: 64px;
+  background: #030023;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Shippori Mincho B1";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 5%;
+  color: #FFFFFF;
+  position: relative;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.form-contact-custom .btn-submit svg {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.main-announcements {
+  margin-top: 80px;
+  padding: 0 160px;
+}
+@media (max-width: 1282px) {
+  .main-announcements {
+    padding: 0 60px;
+  }
+}
+.main-announcements .main-announcements__list {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+}
+.main-announcements .main-announcements__list .item {
+  border-top: 1px solid #030023;
+  padding: 32px 24px;
+  display: flex;
+  gap: 40px;
+}
+.main-announcements .main-announcements__list .item .date {
+  font-family: "Shippori Mincho B1";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 5%;
+  color: #030023;
+}
+.main-announcements .main-announcements__list .item .content .title {
+  font-family: "Higure Gothic";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 5%;
+  color: #030023;
+  margin-bottom: 16px;
+}
+.main-announcements .main-announcements__list .item .content .desc {
+  font-family: "A P-OTF A1Gothic Std";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 200%;
+  letter-spacing: 5%;
+  color: #030023;
+}
+.main-announcements .main-announcements__list .item:last-child {
+  border-bottom: 1px solid #030023;
+}
+.main-announcements .pagination {
+  margin: 0 auto;
+  margin-top: 64px;
+  margin-bottom: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+}
+.main-announcements .pagination li {
+  width: 48px;
+  height: 48px;
+  list-style: none;
+  border-radius: 100%;
+  background: #fff;
+  border: 1px solid #030023;
+}
+.main-announcements .pagination li a {
+  font-family: "Higure Gothic";
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 5%;
+  text-align: center;
+  color: #030023;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.main-announcements .pagination .active {
+  background: #DB5331;
+  border: none;
+}
+.main-announcements .pagination .active a {
+  color: #FFF;
+}
+
+.privacy-policy {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 160px;
+}
+@media (max-width: 1280px) {
+  .privacy-policy {
+    padding: 0 60px;
+  }
+}
+.privacy-policy .box-item {
+  margin-top: 80px;
+}
+.privacy-policy .box-item .title {
+  font-family: "Shippori Mincho B1";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 160%;
+  letter-spacing: 5%;
+  color: #030023;
+}
+.privacy-policy .box-item .desc {
+  font-family: "Shippori Mincho B1";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 240%;
+  letter-spacing: 5%;
+  color: #030023;
+  text-align: justify;
+}
+.privacy-policy .box-item .desc ul {
+  margin-top: 0;
+  padding-left: 21px;
+}
+
+.box-main-thanhs-404 .image-top {
+  max-width: 497px;
+  width: 100%;
+  margin-left: auto;
+}
+@media (max-width: 768px) {
+  .box-main-thanhs-404 .image-top {
+    max-width: 243px;
+    width: 100%;
+  }
+  .box-main-thanhs-404 .image-top svg {
+    width: 100%;
+    height: auto;
+  }
+}
+.box-main-thanhs-404 .image-bottom {
+  max-width: 306px;
+  width: 100%;
+  margin-top: -108px;
+}
+@media (max-width: 768px) {
+  .box-main-thanhs-404 .image-bottom {
+    margin-top: 60px;
+    max-width: 153px;
+  }
+  .box-main-thanhs-404 .image-bottom svg {
+    width: 100%;
+    height: auto;
+  }
+}
+.box-main-thanhs-404 .main-content {
+  max-width: 460px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -121px;
+}
+@media (max-width: 768px) {
+  .box-main-thanhs-404 .main-content {
+    margin-top: -47px;
+  }
+}
+.box-main-thanhs-404 .main-content .title-thanks-and-404 {
+  font-family: Shippori Mincho B1;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 140%;
+  letter-spacing: 5%;
+  text-align: center;
+  color: #030023;
+}
+@media (max-width: 768px) {
+  .box-main-thanhs-404 .main-content .title-thanks-and-404 {
+    font-size: 28px;
+    line-height: 120%;
+  }
+}
+.box-main-thanhs-404 .main-content .desc-thanks-and-404 {
+  margin-top: 40px;
+  font-family: Higure Gothic;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 5%;
+  text-align: center;
+  color: #030023;
+}
+@media (max-width: 768px) {
+  .box-main-thanhs-404 .main-content .desc-thanks-and-404 {
+    font-size: 14px;
+    margin-top: 32px;
+  }
+}
+.box-main-thanhs-404 .main-content .btn-thanks-and-404 {
+  max-width: 331px;
+  width: 100%;
+  height: 74px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background: #030023;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Shippori Mincho B1";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 5%;
+  color: #FFFFFF;
+  position: relative;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .box-main-thanhs-404 .main-content .btn-thanks-and-404 {
+    max-width: 335px;
+    width: 100%;
+    height: 72px;
+    font-size: 15px;
+    margin-top: 32px;
+  }
+}
+.box-main-thanhs-404 .main-content .btn-thanks-and-404 svg {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=v.css.map */
