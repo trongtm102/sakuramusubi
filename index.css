@@ -1,0 +1,2150 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Higure Gothic", sans-serif;
+  color: #030023;
+  background-color: #F6F6F1;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px 40px 24px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  box-sizing: border-box;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+
+.header__logo span {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: 0;
+  color: #030023;
+  text-align: center;
+}
+
+.header__nav {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.header__link {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19.6px;
+  letter-spacing: 1.4px;
+  color: #030023;
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+.header__link:hover {
+  opacity: 0.7;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 860px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.hero:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #F6F6F1;
+  height: 50%;
+}
+
+.hero__pink-dot-wrapper {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 58.39px;
+}
+
+.hero__pink-dot-wrapper--1 {
+  left: 93.54%;
+  right: 2.94%;
+  top: calc(50% - 111.8px);
+  transform: translateY(-50%);
+}
+
+.hero__pink-dot-wrapper--2 {
+  left: 3.47%;
+  right: 93.01%;
+  top: calc(50% + 142.2px);
+  transform: translateY(-50%);
+}
+
+.hero__pink-dot-wrapper--3 {
+  left: 24.86%;
+  right: 71.06%;
+  top: calc(50% - 191.6px);
+  transform: translateY(-50%);
+}
+
+.hero__pink-dot {
+  flex: none;
+  width: 50px;
+  height: 39px;
+  background: radial-gradient(circle, rgba(243, 188, 202, 0.9) 0%, rgba(243, 188, 202, 0.6) 50%, rgba(243, 188, 202, 0.3) 80%, transparent 100%);
+  filter: blur(4px);
+  border-radius: 50%;
+  z-index: 4;
+}
+
+.hero__pink-dot-wrapper--1 .hero__pink-dot,
+.hero__pink-dot-wrapper--2 .hero__pink-dot {
+  transform: rotate(255deg);
+}
+
+.hero__pink-dot-wrapper--3 .hero__pink-dot {
+  transform: rotate(60deg);
+}
+
+.hero__vector-left {
+  position: absolute;
+  top: 9.77%;
+  right: 67.43%;
+  bottom: 2.33%;
+  left: 1.04%;
+  filter: drop-shadow(0 0 6px rgb(236, 225, 201));
+  z-index: 1;
+}
+
+.hero__vector-left img {
+  position: absolute;
+  top: -1.06%;
+  right: -1.76%;
+  bottom: -1.06%;
+  left: -1.76%;
+  width: auto;
+  height: auto;
+  max-width: none;
+}
+
+.hero__vector-right {
+  position: absolute;
+  top: 9.77%;
+  right: 1.04%;
+  bottom: 2.33%;
+  left: 67.43%;
+  filter: drop-shadow(0 0 6px rgb(236, 225, 201));
+  z-index: 1;
+}
+
+.hero__vector-right img {
+  position: absolute;
+  top: -1.06%;
+  right: -1.76%;
+  bottom: -1.06%;
+  left: -1.76%;
+  width: auto;
+  height: auto;
+  max-width: none;
+}
+
+.hero__union {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1440px;
+  height: 419px;
+  z-index: 2;
+}
+
+.hero__union img {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -0.14%;
+  bottom: -3.34%;
+  left: -0.14%;
+  width: 1444px;
+  height: 433px;
+  max-width: none;
+  object-fit: contain;
+}
+
+.hero__bg-text {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 908px;
+  height: 200px;
+  overflow: hidden;
+  font-family: "A P-OTF A1Gothic Std", sans-serif;
+  font-size: 200px;
+  line-height: 1;
+  letter-spacing: 20px;
+  color: rgba(178, 130, 71, 0.08);
+  margin: 0;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.hero__deco-left {
+  position: absolute;
+  top: 57%;
+  right: 78.47%;
+  bottom: 57.44%;
+  left: -6.11%;
+  object-fit: contain;
+  z-index: 3;
+  height: 119px;
+}
+
+.hero__badges {
+  position: absolute;
+  left: 32px;
+  top: 660px;
+  display: flex;
+  gap: 16px;
+  line-height: 0;
+  z-index: 5;
+}
+
+.hero__badge {
+  display: inline-grid;
+  grid-template-columns: max-content;
+  grid-template-rows: max-content;
+  justify-items: start;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.hero__badge-bg {
+  grid-column: 1;
+  grid-row: 1;
+  height: 128px;
+  margin: 0;
+}
+
+.hero__badge-content {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 102px;
+  margin-left: 38px;
+  margin-top: 13px;
+  position: relative;
+}
+
+.hero__badge-icon {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.hero__badge-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  border-radius: 1px;
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.8px;
+  text-align: center;
+  flex-shrink: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.hero__badge-text--water {
+  color: #0B2E54;
+}
+
+.hero__badge-text--kitchen {
+  color: #AC3A09;
+}
+
+.hero__badge-text--tableware {
+  color: #875408;
+}
+
+.hero__badge-cross {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72.407px;
+  height: 72.407px;
+  margin-left: 38.35px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.hero__badge-cross::before {
+  content: "";
+  flex: none;
+  transform: rotate(45deg);
+  width: 93px;
+  height: 9.399px;
+  position: relative;
+  background-color: transparent;
+}
+
+.hero__deco-right {
+  position: absolute;
+  top: 3.72%;
+  right: -8.4%;
+  bottom: 83.49%;
+  left: 82.92%;
+  object-fit: contain;
+  z-index: 3;
+}
+
+.hero__years-badge {
+  position: absolute;
+  left: 183px;
+  top: 352px;
+  width: 142px;
+  height: 203px;
+  object-fit: contain;
+  z-index: 6;
+}
+
+.hero__vertical-text {
+  position: absolute;
+  left: 1045px;
+  top: 116px;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  z-index: 6;
+}
+
+.hero__text-col {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.hero__text-col--1 {
+  width: 65px;
+  align-items: flex-start;
+}
+
+.hero__text-col--2 {
+  width: 65px;
+}
+
+.hero__text-col--3 {
+  width: 65px;
+}
+
+.hero__text {
+  width: 48px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: "Higure Gothic", "Zen Old Mincho", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2;
+  color: #030023;
+  margin: 0;
+  flex-shrink: 0;
+  white-space: pre-wrap;
+  letter-spacing: 10px;
+}
+
+.hero__text--red {
+  color: #DB5331;
+}
+
+.hero__text-lines {
+  display: inline-grid;
+  grid-template-columns: max-content;
+  grid-template-rows: max-content;
+  justify-items: start;
+  line-height: 0;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.hero__line-thick {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: #030023;
+  width: 6px;
+  margin: 0;
+}
+
+.hero__text-col--1 .hero__line-thick {
+  height: 252px;
+  margin-top: 0;
+}
+
+.hero__text-col--2 .hero__line-thick {
+  height: 282px;
+  margin-top: 0;
+}
+
+.hero__text-col--3 .hero__line-thick {
+  height: 390px;
+  margin-top: 0;
+}
+
+.hero__line-thin {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: #030023;
+  width: 1px;
+}
+
+.hero__text-col--1 .hero__line-thin {
+  height: 252px;
+  margin-left: 8px;
+  margin-top: 0;
+}
+
+.hero__text-col--2 .hero__line-thin {
+  height: 282px;
+  margin-left: 8px;
+  margin-top: 0;
+}
+
+.hero__text-col--3 .hero__line-thin {
+  height: 390px;
+  margin-left: 8px;
+  margin-top: 0;
+}
+
+.hero__hand-frame {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 306px;
+  height: 348px;
+  object-fit: contain;
+  z-index: 7;
+}
+
+.hero__main-onigiri {
+  position: absolute;
+  left: 50%;
+  top: 84px;
+  width: 454px;
+  height: 756px;
+  transform: translateX(-50%);
+  object-fit: contain;
+  z-index: 8;
+}
+
+.hero__rice-mask {
+  position: absolute;
+  left: 824.92px;
+  top: 574px;
+  width: 254px;
+  height: 254px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #F6F6F1;
+  z-index: 9;
+}
+
+.hero__rice-pattern {
+  position: absolute;
+  left: -23.23%;
+  top: -11.57%;
+  width: 140.16%;
+  height: 116.85%;
+  object-fit: cover;
+}
+
+.difference {
+  padding: 120px 0;
+  background-color: #F6F6F1;
+  position: relative;
+}
+
+.difference__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 160px;
+  position: relative;
+}
+
+.difference__badge {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  z-index: 10;
+}
+
+.difference__badge svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 4px 12px rgba(219, 83, 49, 0.3));
+}
+
+.difference__content {
+  text-align: center;
+}
+
+.difference__title {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.4;
+  letter-spacing: 2px;
+  color: #030023;
+  margin-bottom: 80px;
+}
+
+.difference__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.difference__card {
+  background: #FFFFFF;
+  padding: 60px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(3, 0, 35, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.difference__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(3, 0, 35, 0.12);
+}
+
+.difference__card h3 {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.4;
+  letter-spacing: 1.4px;
+  color: #030023;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 3px solid #DB5331;
+}
+
+.difference__card ul {
+  list-style: none;
+  text-align: left;
+}
+
+.difference__card ul li {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.9px;
+  color: #030023;
+  padding-left: 32px;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.difference__card ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #DB5331;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.about {
+  position: relative;
+  padding: 160px 0;
+  background-color: #F6F6F1;
+}
+
+.about__title-vertical {
+  position: absolute;
+  left: 240px;
+  top: 332px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  writing-mode: vertical-rl;
+  z-index: 10;
+}
+
+.about__title-line {
+  width: 4px;
+  height: 280px;
+  background-color: #030023;
+}
+
+.about__title-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: #030023;
+  writing-mode: vertical-rl;
+}
+
+.about__title-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.about__container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.about__top {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-bottom: 150px;
+}
+
+.about__quote {
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.6;
+  letter-spacing: 1.2px;
+  color: #030023;
+  margin: 0;
+}
+
+.about__divider {
+  width: 100%;
+  height: 6px;
+  background-color: #030023;
+}
+
+.about__features {
+  position: relative;
+}
+
+.about__feature {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 24px;
+  margin-bottom: 32px;
+  background: white;
+  border: 1px solid #030023;
+  border-radius: 24px;
+  clear: both;
+}
+
+.about__feature--left {
+  border-top-left-radius: 0;
+}
+
+.about__feature--right {
+  border-top-right-radius: 0;
+  justify-content: flex-end;
+  float: right;
+}
+
+.about__feature p {
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 600;
+
+  font-size: 20px;
+
+  line-height: 36px;
+  letter-spacing: 1px;
+}
+
+.about__feature-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.about__section {
+  display: flex;
+  gap: 72px;
+  margin-bottom: 80px;
+}
+
+.about__section--1 {
+  align-items: flex-start;
+}
+
+.about__section--2 {
+  align-items: center;
+}
+
+.about__image-wrapper {
+  flex-shrink: 0;
+  width: 400px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.about__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about__text-content {
+  flex: 1;
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 2.4;
+  letter-spacing: 0.8px;
+  color: #030023;
+}
+
+.about__text-content p {
+  margin: 0 0 24px 0;
+}
+
+.about__text-content p:last-child {
+  margin-bottom: 0;
+}
+
+.about-image {
+  padding: 80px 0;
+  background-color: #F6F6F1;
+}
+
+.about-image__container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.about-image__img {
+  width: 100%;
+  border-radius: 2px;
+  box-shadow: 0 4px 20px rgba(3, 0, 35, 0.1);
+}
+
+.cta {
+  position: relative;
+  background-color: #FFFFFF;
+  padding: 80px 0;
+  border-radius: 0 32px 0 0;
+}
+
+.cta__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 160px 0 160px;
+  position: relative;
+}
+
+.cta__header {
+  margin-bottom: 48px;
+}
+
+.cta__title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cta__title-en {
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 57.6px;
+  letter-spacing: 2.4px;
+  color: #030023;
+}
+
+.cta__title-ja {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.7px;
+  color: #030023;
+}
+
+.cta__cards {
+  display: flex;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+.cta__card {
+  display: flex;
+  justify-content: space-between;
+  gap: 230px;
+  flex: 1;
+}
+
+.cta__card-content {
+  flex: 1;
+}
+
+.cta__card-title {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 51.2px;
+  letter-spacing: 1.6px;
+  color: #030023;
+  margin-bottom: 24px;
+}
+
+.cta__card-divider {
+  width: 100%;
+  height: 6px;
+  background-color: #030023;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.cta__card-divider::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.5" numOctaves="1" /></filter><rect width="100%" height="100%" filter="url(%23noise)" opacity="0.5"/></svg>');
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.cta__card-text p {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28.8px;
+  letter-spacing: 0.8px;
+  color: #030023;
+  margin-bottom: 8px;
+}
+
+.cta__card-note {
+  font-weight: 700 !important;
+  margin-top: 8px;
+}
+
+.cta__card-icon {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.cta__card-icon::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="2.5" numOctaves="1" /></filter><rect width="100%" height="100%" filter="url(%23noise)" opacity="0.3"/></svg>');
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.cta__card-icon--orange {
+  background-color: #DB5331;
+}
+
+.cta__card-icon--dark {
+  background-color: #1C1C1C;
+}
+
+.cta__card-icon svg {
+  position: relative;
+  z-index: 2;
+}
+
+.cta__vertical-text {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 400;
+  font-size: 112px;
+  line-height: 112px;
+  color: #030023;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.cta__vertical-char {
+  display: block;
+}
+
+.footer {
+  background-color: #1C1C1C;
+  background-image: linear-gradient(to bottom, #1c1c1c 0%, #1c1c1c 100%);
+  color: #FFFFFF;
+  padding: 80px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer__main {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 160px 80px 160px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 160px;
+  position: relative;
+}
+
+.footer__left {
+  position: relative;
+}
+
+.footer__company {
+  margin-bottom: 120px;
+}
+
+.footer__company-name {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 48px;
+  letter-spacing: 1.2px;
+  color: #FFFFFF;
+  margin-bottom: 32px;
+}
+
+.footer__company-info p {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.8px;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+
+.footer__watermark {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 900;
+  font-size: 188px;
+  line-height: 188px;
+  letter-spacing: 9.4px;
+  color: #FFFFFF;
+  opacity: 0.02;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer__right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer__links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+}
+
+.footer__links-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer__link {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25.6px;
+  letter-spacing: 0.8px;
+  color: #FFFFFF;
+  transition: opacity 0.3s ease;
+}
+
+.footer__link:hover {
+  opacity: 0.7;
+}
+
+.footer__divider {
+  width: 100%;
+  height: 1px;
+  background-color: #FFFFFF;
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer__privacy {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  letter-spacing: 0.8px;
+  color: #FFFFFF;
+  transition: opacity 0.3s ease;
+}
+
+.footer__privacy:hover {
+  opacity: 0.7;
+}
+
+.footer__copyright {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  letter-spacing: 0.8px;
+  color: #FFFFFF;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(243, 188, 201, 0.3), transparent 70%);
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+@media (max-width: 1200px) {
+
+  .header__container,
+  .hero__container,
+  .cta__container,
+  .footer__main {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .cta__cards {
+    flex-direction: column;
+  }
+
+  .cta__card {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__container {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .header__nav {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .hero__content {
+    flex-direction: column;
+  }
+
+  .hero__text-vertical {
+    writing-mode: horizontal-tb;
+    flex-direction: row;
+  }
+
+  .cta__container {
+    padding: 40px 24px;
+  }
+
+  .cta__title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cta__vertical-text {
+    display: none;
+  }
+
+  .footer__main {
+    grid-template-columns: 1fr;
+    padding: 40px 24px;
+    gap: 40px;
+  }
+
+  .footer__links {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section-chigai {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 120px 0px 0px;
+  background-color: #F6F6F1;
+  overflow: hidden;
+}
+
+.section-chigai__container {
+  position: relative;
+}
+
+.section-chigai__deco-left,
+.section-chigai__deco-right {
+  position: absolute;
+  width: 50px;
+  height: 58px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.section-chigai__deco-left {
+  position: absolute;
+  left: 0;
+  top: 883px;
+  width: 362px;
+  height: 364px;
+  background-image: url("../img/section-chigai-deco-asset7.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.section-chigai__deco-right {
+  position: absolute;
+  right: calc(50% - 720px + 80px);
+  top: 207px;
+  width: 50px;
+  height: 39px;
+  transform: rotate(255deg);
+}
+
+.section-chigai__title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 1120px;
+  margin: 0px auto 40px;
+}
+
+.section-chigai__title h2 {
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 600;
+
+  font-size: 32px;
+
+  line-height: 51.2px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #030023;
+}
+
+.section-chigai__icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.section-chigai__table {
+  width: 1120px;
+  margin: 0 auto;
+}
+
+.section-chigai__table .table__row:nth-child(7) .table__col--label {
+  border-bottom: none;
+}
+
+.section-chigai .table__header {
+  display: grid;
+  grid-template-columns: 274px 415px 415px;
+  gap: 8px;
+  margin-bottom: -1px;
+}
+
+.section-chigai .table__header .table__col {
+  height: 83px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.6;
+  letter-spacing: 1.1px;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.section-chigai .table__header .table__col--left {
+  background-color: #E0DCD5;
+  color: #1C1C1C;
+}
+
+.section-chigai .table__header .table__col--right {
+  background-color: #AC092F;
+  color: #FFFFFF;
+}
+
+.section-chigai .table__row {
+  display: grid;
+  grid-template-columns: 274px 415px 415px;
+  gap: 8px;
+  margin-bottom: -1px;
+}
+
+.section-chigai .table__row .table__col {
+
+  border-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 24px;
+}
+
+.section-chigai .table__row .table__col--label {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.9px;
+  text-align: center;
+  color: #030023;
+  border-bottom: 1px solid #AC092F;
+}
+
+.section-chigai .table__row .table__col--left {
+  background-color: #E0DCD5;
+  padding: 16px 32px;
+}
+
+.section-chigai .table__row .table__col--right {
+  background-color: #AC092F;
+  padding: 16px 32px;
+}
+
+
+.section-chigai .table__row .table__content {
+  background-color: #F6F6F1;
+  width: 100%;
+  padding: 16px;
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.9px;
+  text-align: center;
+  color: #383838;
+}
+
+.section-chigai .table__row .table__content--highlight {
+  background-color: #FFFFFF;
+  font-weight: 700;
+  color: #1C1C1C;
+  position: relative;
+}
+
+.section-chigai .table__row .table__vector-icon {
+  position: absolute;
+  left: 164px;
+  top: 118px;
+  width: 5.76px;
+  height: 3.067px;
+  mix-blend-mode: screen;
+}
+
+.section-chigai .table__row:last-child .table__col--left,
+.section-chigai .table__row:last-child .table__col--right {
+  border-radius: 0 0 8px 8px;
+}
+
+.section-chigai__callout {
+  display: flex;
+  gap: 64px;
+  margin-top: 80px;
+  padding: 96px 0;
+  background-color: #F3F0E5;
+  position: relative;
+}
+
+.section-chigai__callout .icon-dots {
+  right: auto;
+  bottom: auto;
+  left: 0;
+  top: -30%;
+}
+
+.section-chigai__callout .callout__image {
+  width: 280px;
+  height: 416px;
+  border-radius: 8px;
+}
+
+.section-chigai__callout .callout__content {
+  flex: 1;
+  max-width: 856px;
+}
+
+.section-chigai__callout .callout__content span {
+  position: relative;
+  background: linear-gradient(transparent 55%,
+      #ffe600 55%);
+
+}
+
+.section-chigai__callout .callout__content h3 {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.6;
+  letter-spacing: 1.6px;
+  color: #1C1C1C;
+  margin-bottom: 24px;
+}
+
+.section-chigai__callout .callout__content p {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 2.4;
+  letter-spacing: 0.8px;
+  color: #1C1C1C;
+  margin-bottom: 0;
+}
+
+.section-chigai__callout .callout__content p:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.section-about {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 120px 270px;
+  background-color: #F3F0E5;
+}
+
+.section-about__container {
+  position: relative;
+}
+
+.section-about__deco-left,
+.section-about__deco-right {
+  position: absolute;
+  width: 50px;
+  height: 58px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.section-about__deco-left {
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 306px;
+  height: 348px;
+  background-image: url("../img/section-about-hand-frame.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.section-about__deco-right {
+  position: absolute;
+  right: -298px;
+  top: 299px;
+  width: 738px;
+  height: 309px;
+  background-image: url("../img/union-decoration-about.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.section-about__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 60px;
+}
+
+.section-about__title h2 {
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.6;
+  text-align: center;
+  color: #030023;
+}
+
+.section-about__icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.section-about__features {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid #030023;
+  border-radius: 0;
+}
+
+.section-about__features .feature {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #030023;
+  background-color: #F3F0E5;
+}
+
+.section-about__features .feature:last-child {
+  border-bottom: 0;
+}
+
+.section-about__features .feature__icon {
+  width: 134px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-about__features .feature__icon img {
+  width: 102px;
+  height: 88px;
+  object-fit: contain;
+}
+
+.section-about__features .feature__content {
+  flex: 1;
+  padding: 24px;
+  border-left: 1px solid #030023;
+}
+
+.section-about__features .feature__content h3 {
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  color: #030023;
+  margin-bottom: 8px;
+}
+
+.section-about__features .feature__content p {
+  font-family: "Higure Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.7px;
+  color: #030023;
+  margin: 0;
+}
+
+/*# sourceMappingURL=index.css.map */
+
+.egg-left img {
+  max-width: 454px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-top {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  height: 50%;
+  /* background: linear-gradient(180deg, #ECC9C5 0%, #ECE2C9 50%, #EBE1C8 100%); */
+  background-image: url("assets/img/bg-hero-top.png");
+  background-size: cover;
+}
+
+.egg-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.img-center {
+  left: 56%;
+  top: 54%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 999;
+}
+
+.egge-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+}
+
+.egge-right img {
+  max-width: 454px;
+}
+
+.hero-icon-right {
+  position: absolute;
+  right: -60px;
+  z-index: 999;
+  top: 37px;
+  height: 110px;
+  width: 363px;
+}
+
+.heart-left-bottom {
+  position: absolute;
+  left: 2%;
+  bottom: 33%;
+  z-index: 999;
+  width: 40px;
+}
+
+.heart-left-top {
+  position: absolute;
+  left: 25%;
+  top: 26%;
+  z-index: 999;
+  width: 40px;
+}
+
+.heart-right-top {
+  position: absolute;
+  right: 4%;
+  top: 22%;
+  z-index: 999;
+  width: 40px;
+}
+
+.about-section h2 {
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 600;
+
+  font-size: 60px;
+  line-height: 61.6px;
+  letter-spacing: 0px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+
+}
+
+.about-section .heart-right-top {
+  top: auto;
+  bottom: 4%;
+}
+
+.about-section .sub-title {
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 600;
+
+  font-size: 12px;
+
+  line-height: 14.4px;
+  letter-spacing: 1.92px;
+  color: #DB5331;
+  writing-mode: vertical-rl;
+  display: block;
+  margin-left: 7px;
+}
+
+.about-content-top {
+  display: flex;
+  gap: 72px;
+  justify-content: center;
+}
+
+.about-content-top .left {
+  display: flex;
+}
+
+.about-content-top .right {
+  width: 493px;
+}
+
+.about-content-top p {
+  font-family: Higure Gothic;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+
+  line-height: 41.6px;
+  letter-spacing: 0.8px;
+  color: #030023;
+}
+
+.about-content-bottom {}
+
+.about-section {
+  padding: 120px 0px 280px;
+}
+
+.about-content-bottom {
+  position: relative;
+  width: 1120px;
+  margin: auto;
+}
+
+.about-content-bottom .left {
+  left: 0;
+  top: 30px;
+  width: 514px;
+  position: relative;
+}
+
+.about-content-bottom .right-top {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 192px;
+}
+
+.about-content-bottom .right-bottom {
+  position: absolute;
+  right: 0;
+  top: 176px;
+  width: 650px;
+}
+
+.about-section {
+  position: relative;
+}
+
+.about-content-top .icon-left-top,
+.about-content-top .icon-right-middle,
+.about-content-top .icon-left-bottom {
+  height: 309px;
+  position: absolute;
+}
+
+.about-content-top .icon-left-top {
+  left: 0;
+  top: 0;
+}
+
+.about-content-top .icon-right-middle {
+  right: 0;
+  top: 27%;
+}
+
+.about-content-top .icon-left-bottom {
+  left: 0;
+  bottom: -108px;
+  z-index: 1;
+}
+
+.why-section {
+  padding: 120px 0px;
+  position: relative;
+  min-height: 100vh;
+  background-image: url("assets/img/why (1).png");
+  background-size: cover;
+  overflow: hidden;
+}
+
+.why-section .rice {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 306px;
+}
+
+.heart {
+  position: absolute;
+  top: 240px;
+  left: 84px;
+  width: 39px;
+}
+
+.why-section .why-title img {
+  margin: 0 auto 10px;
+  width: 32px;
+}
+
+.why-section .why-title {
+  margin-bottom: 60px;
+  text-align: center;
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 600;
+
+  font-size: 32px;
+
+  line-height: 51.2px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #030023;
+}
+
+.why-content {
+  position: relative;
+  width: 900px;
+  margin: auto;
+  background-color: #f3f0e5;
+  z-index: 1;
+}
+
+.why-box .box-img {
+  width: 134px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #030023;
+  border-top: 1px solid #030023;
+}
+
+.why-box .box-content {
+  border: 1px solid #030023;
+  border-bottom: none;
+  padding: 30px 25px;
+  width: calc(100% - 134px);
+}
+
+.why-box {
+  display: flex;
+}
+
+.why-box .box-img img {
+  height: 88px;
+}
+
+.why-box .box-content h3 {
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+
+  line-height: 28px;
+  letter-spacing: 1px;
+  color: #030023;
+  margin-bottom: 10px;
+}
+
+.why-box .box-content p {
+  font-family: Higure Gothic;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+
+  line-height: 22.4px;
+  letter-spacing: 0.7px;
+  color: #030023;
+}
+
+.why-content .why-box:last-child {
+  border-bottom: 1px solid #030023;
+}
+
+.why-section .icon-right-middle {
+  position: absolute;
+  top: 28%;
+  z-index: 1;
+  right: 0;
+  right: -45px;
+}
+
+.section-chigai .heart-right-top {
+  top: 5%;
+}
+
+.section-chigai .heart {
+  top: 43%;
+}
+
+.icon-dots {
+  width: 362px;
+  position: absolute;
+  right: 0;
+  bottom: -10%;
+  z-index: 9;
+}
+
+.section-chigai__wraper {
+  display: flex;
+  gap: 65px;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+}
+
+.banner-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-head {
+  margin-bottom: 60px;
+}
+
+.banner-head h2 {
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 600;
+
+  font-size: 24px;
+
+  line-height: 38.4px;
+  letter-spacing: 1.2px;
+  color: #030023;
+  border-bottom: 6px solid #030023;
+  padding-bottom: 60px;
+
+}
+
+.banner-wrapper {
+  position: relative;
+  padding-top: 72px;
+}
+
+.banner-wrapper .heart {
+  bottom: 0;
+  top: auto;
+}
+
+.banner-content {
+  position: relative;
+  max-width: 804px;
+  margin: auto;
+}
+
+.banner-content .banner-head {
+  position: relative;
+}
+
+.banner-content .logo {
+  width: 84px;
+  position: absolute;
+  z-index: 9;
+  left: -160px;
+  bottom: 0;
+}
+
+.banner-wrapper .circle {
+  width: 275px;
+  position: absolute;
+  top: -191px;
+  right: 0;
+  z-index: -1;
+}
+
+.banner-wrapper .icon-right-middle {
+  position: absolute;
+  right: -33px;
+  top: -147px;
+  z-index: -1;
+}
+
+.meaning-title {
+  text-align: center;
+}
+
+.meaning-title img {
+  margin: auto;
+  width: 32px;
+  margin-bottom: 5px;
+}
+
+.meaning-title h2 {
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 600;
+
+  font-size: 32px;
+
+  line-height: 51.2px;
+  letter-spacing: 0px;
+  text-align: center;
+
+}
+
+.meaning-section {
+  padding-top: 185px;
+  position: relative;
+  padding-bottom: 120px;
+}
+
+.meaning-section .top-icon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.meaning-box {
+  margin: auto;
+  max-width: 1120px;
+  display: flex;
+  gap: 72px;
+  margin-top: 80px;
+}
+
+.meaning-box img {
+  max-width: 400px;
+}
+
+.meaning-box p {
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 600;
+
+  font-size: 16px;
+
+  line-height: 38.4px;
+  letter-spacing: 0.8px;
+  margin-bottom: 20px;
+}
+
+.meaning-box img.sub {
+  max-width: 192px;
+  position: absolute;
+  bottom: -38px;
+  left: -41px;
+}
+
+.meaning-box .meaning__img {
+  position: relative;
+  height: 100%;
+}
+
+.meaning-content .meaning-box:last-child img.sub {
+  max-width: 98px;
+  bottom: -38px;
+  right: -41px;
+  left: auto;
+}
+
+.product-title h2 {
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 600;
+  font-size: 32px;
+
+  line-height: 51.2px;
+  letter-spacing: 5px;
+  text-align: center;
+  writing-mode: vertical-rl;
+  position: relative;
+  left: -8px;
+  color: #fff;
+}
+
+.product-title img {
+  width: 32px;
+  margin-bottom: 6px;
+}
+
+.product-head {
+  padding-top: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.product-section {
+  overflow: hidden;
+  padding: 120px 0px 200px;
+  background-color: #1c1c1c;
+  position: relative;
+}
+
+.product-section .border-top {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.product-section .bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.product-section .product-content {
+  max-width: 1120px;
+  margin: auto;
+  display: flex;
+  gap: 100px;
+  position: relative;
+  margin-top: 80px;
+}
+
+.product-section .product-content h3 {
+  font-family: Shippori Mincho B1;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+
+  line-height: 28px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+
+}
+
+.product-section .product-content p {
+  font-family: Higure Gothic;
+  font-weight: 400;
+  font-size: 14px;
+
+  line-height: 19.6px;
+  letter-spacing: 0.7px;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+}
+
+.dashed-border {
+  height: 1px;
+  width: 100%;
+  border-bottom: 1px dashed #FFFFFF;
+  margin: 20px 0px 25px;
+}
+
+.product-section .icon-right-middle {
+  position: absolute;
+  top: 1%;
+  z-index: 1;
+  right: 0;
+  right: -75px;
+}
+
+.product-section .product-content .img img {
+  max-width: 400px;
+}
+
+.our-attention-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.our-attention__title {
+  display: flex;
+  gap: 10px;
+}
+
+.our-attention-container {
+  max-width: 1120px;
+  margin: auto;
+}
+
+.our-attention-head h2 {
+  font-family: Shippori Mincho B1;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 32px;
+  leading-trim: NONE;
+  line-height: 160%;
+  letter-spacing: 5%;
+  color: #030023;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.our-attention-head h2 span  {
+  font-family: Higure Gothic;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 160%;
+  letter-spacing: 5%;
+  color: #030023;
+}
+.our-attention-item h3 a{
+  font-family: Shippori Mincho B1;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 140%;
+letter-spacing: 0%;
+color: #030023;
+}
+.our-attention-item p{
+font-family: Higure Gothic;
+font-weight: 500;
+font-style: Medium;
+font-size: 14px;
+leading-trim: NONE;
+line-height: 160%;
+letter-spacing: 5%;
+color: #030023;
+}
