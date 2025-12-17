@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap");
 
 * {
   margin: 0;
@@ -10,7 +10,7 @@
 body {
   font-family: "Higure Gothic", sans-serif;
   color: #030023;
-  background-color: #F6F6F1;
+  background-color: #f6f6f1;
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -92,12 +92,12 @@ img {
 }
 
 .hero:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #F6F6F1;
+  background-color: #f6f6f1;
   height: 50%;
 }
 
@@ -134,7 +134,13 @@ img {
   flex: none;
   width: 50px;
   height: 39px;
-  background: radial-gradient(circle, rgba(243, 188, 202, 0.9) 0%, rgba(243, 188, 202, 0.6) 50%, rgba(243, 188, 202, 0.3) 80%, transparent 100%);
+  background: radial-gradient(
+    circle,
+    rgba(243, 188, 202, 0.9) 0%,
+    rgba(243, 188, 202, 0.6) 50%,
+    rgba(243, 188, 202, 0.3) 80%,
+    transparent 100%
+  );
   filter: blur(4px);
   border-radius: 50%;
   z-index: 4;
@@ -306,11 +312,11 @@ img {
 }
 
 .hero__badge-text--water {
-  color: #0B2E54;
+  color: #0b2e54;
 }
 
 .hero__badge-text--kitchen {
-  color: #AC3A09;
+  color: #ac3a09;
 }
 
 .hero__badge-text--tableware {
@@ -405,7 +411,7 @@ img {
 }
 
 .hero__text--red {
-  color: #DB5331;
+  color: #db5331;
 }
 
 .hero__text-lines {
@@ -495,7 +501,7 @@ img {
   height: 254px;
   border-radius: 50%;
   overflow: hidden;
-  background-color: #F6F6F1;
+  background-color: #f6f6f1;
   z-index: 9;
 }
 
@@ -510,7 +516,7 @@ img {
 
 .difference {
   padding: 120px 0;
-  background-color: #F6F6F1;
+  background-color: #f6f6f1;
   position: relative;
 }
 
@@ -560,7 +566,7 @@ img {
 }
 
 .difference__card {
-  background: #FFFFFF;
+  background: #ffffff;
   padding: 60px 40px;
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(3, 0, 35, 0.08);
@@ -581,7 +587,7 @@ img {
   color: #030023;
   margin-bottom: 32px;
   padding-bottom: 24px;
-  border-bottom: 3px solid #DB5331;
+  border-bottom: 3px solid #db5331;
 }
 
 .difference__card ul {
@@ -605,7 +611,7 @@ img {
   content: "✓";
   position: absolute;
   left: 0;
-  color: #DB5331;
+  color: #db5331;
   font-weight: 700;
   font-size: 20px;
 }
@@ -613,7 +619,7 @@ img {
 .about {
   position: relative;
   padding: 160px 0;
-  background-color: #F6F6F1;
+  background-color: #f6f6f1;
 }
 
 .about__title-vertical {
@@ -770,7 +776,7 @@ img {
 
 .about-image {
   padding: 80px 0;
-  background-color: #F6F6F1;
+  background-color: #f6f6f1;
 }
 
 .about-image__container {
@@ -785,378 +791,12 @@ img {
   box-shadow: 0 4px 20px rgba(3, 0, 35, 0.1);
 }
 
-.cta {
-  position: relative;
-  background-color: #FFFFFF;
-  padding: 80px 0;
-  border-radius: 0 32px 0 0;
-}
-
-.cta__container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 160px 0 160px;
-  position: relative;
-}
-
-.cta__header {
-  margin-bottom: 48px;
-}
-
-.cta__title {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.cta__title-en {
-  font-family: "Shippori Mincho B1", serif;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 57.6px;
-  letter-spacing: 2.4px;
-  color: #030023;
-}
-
-.cta__title-ja {
-  font-family: "Higure Gothic", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.7px;
-  color: #030023;
-}
-
-.cta__cards {
-  display: flex;
-  gap: 48px;
-  margin-bottom: 48px;
-}
-
-.cta__card {
-  display: flex;
-  justify-content: space-between;
-  gap: 230px;
-  flex: 1;
-}
-
-.cta__card-content {
-  flex: 1;
-}
-
-.cta__card-title {
-  font-family: "Higure Gothic", sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 51.2px;
-  letter-spacing: 1.6px;
-  color: #030023;
-  margin-bottom: 24px;
-}
-
-.cta__card-divider {
-  width: 100%;
-  height: 6px;
-  background-color: #030023;
-  margin-bottom: 24px;
-  position: relative;
-}
-
-.cta__card-divider::before {
-  content: "";
-  position: absolute;
-  top: -3px;
-  left: -3px;
-  right: -3px;
-  bottom: -3px;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.5" numOctaves="1" /></filter><rect width="100%" height="100%" filter="url(%23noise)" opacity="0.5"/></svg>');
-  border-radius: 3px;
-  pointer-events: none;
-}
-
-.cta__card-text p {
-  font-family: "Higure Gothic", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 28.8px;
-  letter-spacing: 0.8px;
-  color: #030023;
-  margin-bottom: 8px;
-}
-
-.cta__card-note {
-  font-weight: 700 !important;
-  margin-top: 8px;
-}
-
-.cta__card-icon {
-  width: 104px;
-  height: 104px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-}
-
-.cta__card-icon::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="2.5" numOctaves="1" /></filter><rect width="100%" height="100%" filter="url(%23noise)" opacity="0.3"/></svg>');
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.cta__card-icon--orange {
-  background-color: #DB5331;
-}
-
-.cta__card-icon--dark {
-  background-color: #1C1C1C;
-}
-
-.cta__card-icon svg {
-  position: relative;
-  z-index: 2;
-}
-
-.cta__vertical-text {
-  position: absolute;
-  right: 40px;
-  top: 50%;
-  transform: translateY(-50%);
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  font-family: "Shippori Mincho B1", serif;
-  font-weight: 400;
-  font-size: 112px;
-  line-height: 112px;
-  color: #030023;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.cta__vertical-char {
-  display: block;
-}
-
-.footer {
-  background-color: #1C1C1C;
-  background-image: linear-gradient(to bottom, #1c1c1c 0%, #1c1c1c 100%);
-  color: #FFFFFF;
-  padding: 80px 0 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.footer__main {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 160px 80px 160px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 160px;
-  position: relative;
-}
-
-.footer__left {
-  position: relative;
-}
-
-.footer__company {
-  margin-bottom: 120px;
-}
-
-.footer__company-name {
-  font-family: "Higure Gothic", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 48px;
-  letter-spacing: 1.2px;
-  color: #FFFFFF;
-  margin-bottom: 32px;
-}
-
-.footer__company-info p {
-  font-family: "Higure Gothic", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 32px;
-  letter-spacing: 0.8px;
-  color: #FFFFFF;
-  margin-bottom: 8px;
-}
-
-.footer__watermark {
-  font-family: "Higure Gothic", sans-serif;
-  font-weight: 900;
-  font-size: 188px;
-  line-height: 188px;
-  letter-spacing: 9.4px;
-  color: #FFFFFF;
-  opacity: 0.02;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.footer__right {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.footer__links {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 72px;
-}
-
-.footer__links-col {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.footer__link {
-  font-family: "Higure Gothic", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 25.6px;
-  letter-spacing: 0.8px;
-  color: #FFFFFF;
-  transition: opacity 0.3s ease;
-}
-
-.footer__link:hover {
-  opacity: 0.7;
-}
-
-.footer__divider {
-  width: 100%;
-  height: 1px;
-  background-color: #FFFFFF;
-}
-
-.footer__bottom {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.footer__privacy {
-  font-family: "Higure Gothic", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 25.6px;
-  letter-spacing: 0.8px;
-  color: #FFFFFF;
-  transition: opacity 0.3s ease;
-}
-
-.footer__privacy:hover {
-  opacity: 0.7;
-}
-
-.footer__copyright {
-  font-family: "Higure Gothic", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 25.6px;
-  letter-spacing: 0.8px;
-  color: #FFFFFF;
-}
-
-.footer::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(243, 188, 201, 0.3), transparent 70%);
-  filter: blur(60px);
-  pointer-events: none;
-}
-
-@media (max-width: 1200px) {
-
-  .header__container,
-  .hero__container,
-  .cta__container,
-  .footer__main {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-
-  .cta__cards {
-    flex-direction: column;
-  }
-
-  .cta__card {
-    gap: 40px;
-  }
-}
-
-@media (max-width: 768px) {
-  .header__container {
-    flex-direction: column;
-    gap: 16px;
-    padding: 16px;
-  }
-
-  .header__nav {
-    flex-direction: column;
-    gap: 16px;
-    width: 100%;
-  }
-
-  .hero__content {
-    flex-direction: column;
-  }
-
-  .hero__text-vertical {
-    writing-mode: horizontal-tb;
-    flex-direction: row;
-  }
-
-  .cta__container {
-    padding: 40px 24px;
-  }
-
-  .cta__title {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .cta__vertical-text {
-    display: none;
-  }
-
-  .footer__main {
-    grid-template-columns: 1fr;
-    padding: 40px 24px;
-    gap: 40px;
-  }
-
-  .footer__links {
-    grid-template-columns: 1fr;
-  }
-}
-
 .section-chigai {
   position: relative;
   width: 100%;
   margin: 0 auto;
   padding: 120px 0px 0px;
-  background-color: #F6F6F1;
+  background-color: #f6f6f1;
   overflow: hidden;
 }
 
@@ -1252,13 +892,13 @@ img {
 }
 
 .section-chigai .table__header .table__col--left {
-  background-color: #E0DCD5;
-  color: #1C1C1C;
+  background-color: #e0dcd5;
+  color: #1c1c1c;
 }
 
 .section-chigai .table__header .table__col--right {
-  background-color: #AC092F;
-  color: #FFFFFF;
+  background-color: #ac092f;
+  color: #ffffff;
 }
 
 .section-chigai .table__row {
@@ -1269,7 +909,6 @@ img {
 }
 
 .section-chigai .table__row .table__col {
-
   border-top: 0;
   display: flex;
   align-items: center;
@@ -1285,22 +924,21 @@ img {
   letter-spacing: 0.9px;
   text-align: center;
   color: #030023;
-  border-bottom: 1px solid #AC092F;
+  border-bottom: 1px solid #ac092f;
 }
 
 .section-chigai .table__row .table__col--left {
-  background-color: #E0DCD5;
+  background-color: #e0dcd5;
   padding: 16px 32px;
 }
 
 .section-chigai .table__row .table__col--right {
-  background-color: #AC092F;
+  background-color: #ac092f;
   padding: 16px 32px;
 }
 
-
 .section-chigai .table__row .table__content {
-  background-color: #F6F6F1;
+  background-color: #f6f6f1;
   width: 100%;
   padding: 16px;
   font-family: "Higure Gothic", sans-serif;
@@ -1313,9 +951,9 @@ img {
 }
 
 .section-chigai .table__row .table__content--highlight {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-weight: 700;
-  color: #1C1C1C;
+  color: #1c1c1c;
   position: relative;
 }
 
@@ -1338,7 +976,7 @@ img {
   gap: 64px;
   margin-top: 80px;
   padding: 96px 0;
-  background-color: #F3F0E5;
+  background-color: #f3f0e5;
   position: relative;
 }
 
@@ -1362,9 +1000,7 @@ img {
 
 .section-chigai__callout .callout__content span {
   position: relative;
-  background: linear-gradient(transparent 55%,
-      #ffe600 55%);
-
+  background: linear-gradient(transparent 55%, #ffe600 55%);
 }
 
 .section-chigai__callout .callout__content h3 {
@@ -1373,7 +1009,7 @@ img {
   font-size: 32px;
   line-height: 1.6;
   letter-spacing: 1.6px;
-  color: #1C1C1C;
+  color: #1c1c1c;
   margin-bottom: 24px;
 }
 
@@ -1383,7 +1019,7 @@ img {
   font-size: 16px;
   line-height: 2.4;
   letter-spacing: 0.8px;
-  color: #1C1C1C;
+  color: #1c1c1c;
   margin-bottom: 0;
 }
 
@@ -1397,7 +1033,7 @@ img {
   max-width: 1440px;
   margin: 0 auto;
   padding: 120px 270px;
-  background-color: #F3F0E5;
+  background-color: #f3f0e5;
 }
 
 .section-about__container {
@@ -1472,7 +1108,7 @@ img {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #030023;
-  background-color: #F3F0E5;
+  background-color: #f3f0e5;
 }
 
 .section-about__features .feature:last-child {
@@ -1606,7 +1242,6 @@ img {
   letter-spacing: 0px;
   writing-mode: vertical-rl;
   text-orientation: upright;
-
 }
 
 .about-section .heart-right-top {
@@ -1622,7 +1257,7 @@ img {
 
   line-height: 14.4px;
   letter-spacing: 1.92px;
-  color: #DB5331;
+  color: #db5331;
   writing-mode: vertical-rl;
   display: block;
   margin-left: 7px;
@@ -1653,7 +1288,8 @@ img {
   color: #030023;
 }
 
-.about-content-bottom {}
+.about-content-bottom {
+}
 
 .about-section {
   padding: 120px 0px 280px;
@@ -1866,7 +1502,6 @@ img {
   color: #030023;
   border-bottom: 6px solid #030023;
   padding-bottom: 60px;
-
 }
 
 .banner-wrapper {
@@ -1931,7 +1566,6 @@ img {
   line-height: 51.2px;
   letter-spacing: 0px;
   text-align: center;
-
 }
 
 .meaning-section {
@@ -2053,9 +1687,8 @@ img {
 
   line-height: 28px;
   letter-spacing: 1px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 8px;
-
 }
 
 .product-section .product-content p {
@@ -2065,14 +1698,14 @@ img {
 
   line-height: 19.6px;
   letter-spacing: 0.7px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 5px;
 }
 
 .dashed-border {
   height: 1px;
   width: 100%;
-  border-bottom: 1px dashed #FFFFFF;
+  border-bottom: 1px dashed #ffffff;
   margin: 20px 0px 25px;
 }
 
@@ -2118,7 +1751,7 @@ img {
   gap: 10px;
 }
 
-.our-attention-head h2 span  {
+.our-attention-head h2 span {
   font-family: Higure Gothic;
   font-weight: 500;
   font-style: Medium;
@@ -2128,23 +1761,23 @@ img {
   letter-spacing: 5%;
   color: #030023;
 }
-.our-attention-item h3 a{
+.our-attention-item h3 a {
   font-family: Shippori Mincho B1;
-font-weight: 600;
-font-style: SemiBold;
-font-size: 24px;
-leading-trim: NONE;
-line-height: 140%;
-letter-spacing: 0%;
-color: #030023;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 24px;
+  leading-trim: NONE;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: #030023;
 }
-.our-attention-item p{
-font-family: Higure Gothic;
-font-weight: 500;
-font-style: Medium;
-font-size: 14px;
-leading-trim: NONE;
-line-height: 160%;
-letter-spacing: 5%;
-color: #030023;
+.our-attention-item p {
+  font-family: Higure Gothic;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 160%;
+  letter-spacing: 5%;
+  color: #030023;
 }
