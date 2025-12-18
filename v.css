@@ -2,40 +2,6 @@
   .only-pc {
     display: none !important;
   }
-  .box-main-thanhs-404 .image-top {
-    max-width: 243px;
-    width: 100%;
-  }
-  .box-main-thanhs-404 .image-top svg {
-    width: 100%;
-    height: auto;
-  }
-  .box-main-thanhs-404 .image-bottom {
-    margin-top: 60px;
-    max-width: 153px;
-  }
-  .box-main-thanhs-404 .image-bottom svg {
-    width: 100%;
-    height: auto;
-  }
-  .box-main-thanhs-404 .main-content {
-    margin-top: -47px;
-  }
-  .box-main-thanhs-404 .main-content .title-thanks-and-404 {
-    font-size: 28px;
-    line-height: 120%;
-  }
-  .box-main-thanhs-404 .main-content .desc-thanks-and-404 {
-    font-size: 14px;
-    margin-top: 32px;
-  }
-  .box-main-thanhs-404 .main-content .btn-thanks-and-404 {
-    max-width: 335px;
-    width: 100%;
-    height: 72px;
-    font-size: 15px;
-    margin-top: 32px;
-  }
 }
 @media (min-width: 769px) {
   .only-sp {
@@ -51,7 +17,8 @@ main {
   }
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -82,7 +49,9 @@ html, body {
     padding-left: 24px !important;
   }
 }
-.breadcrumb-main .breadcrumb-main__custom .breadcrumb-main__left .breadcrumb-main__flex a, .breadcrumb-main .breadcrumb-main__custom .breadcrumb-main__left .breadcrumb-main__flex span, .breadcrumb-main .breadcrumb-main__custom .breadcrumb-main__left .breadcrumb-main__flex .arrow {
+.breadcrumb-main .breadcrumb-main__custom .breadcrumb-main__left .breadcrumb-main__flex a,
+.breadcrumb-main .breadcrumb-main__custom .breadcrumb-main__left .breadcrumb-main__flex span,
+.breadcrumb-main .breadcrumb-main__custom .breadcrumb-main__left .breadcrumb-main__flex .arrow {
   font-family: "Higure Gothic";
   font-weight: 400;
   font-size: 14px;
@@ -92,7 +61,9 @@ html, body {
   text-decoration: none;
 }
 @media (max-width: 768px) {
-  .breadcrumb-main .breadcrumb-main__custom .breadcrumb-main__left .breadcrumb-main__flex a, .breadcrumb-main .breadcrumb-main__custom .breadcrumb-main__left .breadcrumb-main__flex span, .breadcrumb-main .breadcrumb-main__custom .breadcrumb-main__left .breadcrumb-main__flex .arrow {
+  .breadcrumb-main .breadcrumb-main__custom .breadcrumb-main__left .breadcrumb-main__flex a,
+  .breadcrumb-main .breadcrumb-main__custom .breadcrumb-main__left .breadcrumb-main__flex span,
+  .breadcrumb-main .breadcrumb-main__custom .breadcrumb-main__left .breadcrumb-main__flex .arrow {
     font-size: 12px;
   }
 }
@@ -355,19 +326,27 @@ html, body {
   color: #030023;
   min-height: 192px;
 }
+.form-contact-custom .form-group input::-moz-placeholder,
+.form-contact-custom .form-group textarea::-moz-placeholder {
+  color: rgba(3, 0, 35, 0.3019607843);
+  opacity: 1;
+  color: rgba(3, 0, 35, 0.3019607843);
+}
 .form-contact-custom .form-group input::-moz-placeholder, .form-contact-custom .form-group textarea::-moz-placeholder {
   color: rgba(3, 0, 35, 0.3019607843);
   opacity: 1;
-  color: rgba(3, 0, 35, 0.3019607843);
 }
-.form-contact-custom .form-group input::placeholder, .form-contact-custom .form-group textarea::placeholder {
+.form-contact-custom .form-group input::placeholder,
+.form-contact-custom .form-group textarea::placeholder {
   color: rgba(3, 0, 35, 0.3019607843);
   opacity: 1;
 }
-.form-contact-custom .form-group input::-webkit-input-placeholder, .form-contact-custom .form-group textarea::-webkit-input-placeholder {
+.form-contact-custom .form-group input::-webkit-input-placeholder,
+.form-contact-custom .form-group textarea::-webkit-input-placeholder {
   color: rgba(3, 0, 35, 0.3019607843);
 }
-.form-contact-custom .form-group input:-ms-input-placeholder, .form-contact-custom .form-group textarea:-ms-input-placeholder {
+.form-contact-custom .form-group input:-ms-input-placeholder,
+.form-contact-custom .form-group textarea:-ms-input-placeholder {
   color: rgba(3, 0, 35, 0.3019607843);
 }
 .form-contact-custom .policy {
@@ -672,4 +651,44 @@ html, body {
   top: 50%;
   right: 10px;
   transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .only-pc {
+    display: none !important;
+  }
+  .box-main-thanhs-404 .image-top {
+    max-width: 243px;
+    width: 100%;
+  }
+  .box-main-thanhs-404 .image-top svg {
+    width: 100%;
+    height: auto;
+  }
+  .box-main-thanhs-404 .image-bottom {
+    margin-top: 60px;
+    max-width: 153px;
+  }
+  .box-main-thanhs-404 .image-bottom svg {
+    width: 100%;
+    height: auto;
+  }
+  .box-main-thanhs-404 .main-content {
+    margin-top: -47px;
+  }
+  .box-main-thanhs-404 .main-content .title-thanks-and-404 {
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .box-main-thanhs-404 .main-content .desc-thanks-and-404 {
+    font-size: 14px;
+    margin-top: 32px;
+  }
+  .box-main-thanhs-404 .main-content .btn-thanks-and-404 {
+    max-width: 335px;
+    width: 100%;
+    height: 72px;
+    font-size: 15px;
+    margin-top: 32px;
+  }
 }/*# sourceMappingURL=v.css.map */
